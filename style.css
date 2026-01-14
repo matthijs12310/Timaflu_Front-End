@@ -1,74 +1,150 @@
-    html, body {
-      height: 100%;
-      margin: 0;
-      color: white;
-    }
+html, body {
+  height: 100%;
+  margin: 0;
+  color: white;
+}
 
-    body {
-      display: flex;
-      flex-direction: column;
-      background-color: #005461;
-      font-family: "Raleway", sans-serif;
-    }
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #005461;
+  font-family: "Raleway", sans-serif;
+}
 
-    img {
-      max-width: 80px;
-      max-height: 80px;
-      justify-content: center;
-      align-items: center;
-    }
+img {
+  max-width: 80px;
+  max-height: 80px;
+  justify-content: center;
+  align-items: center;
+}
 
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
+a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-    .cell {
-      display: flex;
-      border: 5px solid #249E94;
-      background-color: #249E94;
-      border-radius: 8px;
-      padding: 10px 20px;
-    }
+.cell {
+  display: flex;
+  border: 5px solid #249E94;
+  background-color: #249E94;
+  border-radius: 8px;
+  padding: 10px 20px;
+}
 
-    .nav_Test {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #0C7779;
-      border-bottom: 5px solid #249E94;
-      padding: 0 10px 0 10px;
-    }
+.nav_Test {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0C7779;
+  border-bottom: 5px solid #249E94;
+  padding: 0 10px 0 10px;
+}
 
-    .dropdown {
-      position: relative;
-    }
+.dropdown {
+  position: relative;
+}
 
-    .dropdown-toggle {
-      display: block;
-      padding: 10px 0;
-    }
+.dropdown-toggle {
+  display: block;
+  padding: 10px 0;
+}
 
-    .dropdown-menu {
-      position: absolute;
-      display: none;
-      top: 100%;
-      left: 0;
-      padding-top: 5px;
-      min-width: 100%;
-    }
+.dropdown-menu {
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  padding-top: 5px;
+  min-width: 100%;
+}
 
-    .dropdown-menu a {
-      display: block;
-      text-align: center;
-      padding: 10px 15px;
-      background-color: #249E94;
-    }
+.dropdown-menu a {
+  display: block;
+  text-align: center;
+  padding: 10px 15px;
+  background-color: #249E94;
+}
 
-    .dropdown-menu a:hover {
-      background-color: #1a7a72;
-    }
+.dropdown-menu a:hover {
+  background-color: #1a7a72;
+}
 
-    .dropdown:hover .dropdown-menu {
-      display: block;
-    }
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/*   Apotheken   */ 
+table {
+  padding: 25px;
+}
+th {
+  border: 5px solid #249E94;
+  border-radius: 5px;
+}
+td {
+  border-bottom: 3px solid #1a7a72;
+}
+.PharmacyFilter {
+  display: flex;
+  justify-content: left;
+}
+
+/*   Track & Trace   */
+.DeliveryNumber {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin: 5px auto;
+  border: 5px solid #249E94;
+  background-color: #0C7779;
+  padding: 0px 50px;
+}
+
+.progress-container {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 80%;
+  margin: 40px auto;
+}
+
+.progress-line {
+  position: absolute;
+  top: 17px; /* aligns with circle centers */
+  width: 100%;
+  height: 5px;
+  background: #ccc;
+  border-radius: 5px;
+  z-index: 0;
+}
+
+.progress-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  background: white;
+  border: 5px solid #ccc;
+  border-radius: 100%;
+}
+
+.progress-step.active .circle {
+  background: #60df64;       /* filled color */
+  border-color: #1ac420;
+}
+
+.progress-step p {
+  margin-top: 8px;
+  text-align: center;
+  max-width: 100px;
+}
+
+

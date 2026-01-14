@@ -3,33 +3,31 @@
 
 <head>
   <title>Timaflu</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style_mobiel.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Micro+5&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
 </head>
 
 <body>
-  <header class="header_HomePage">
-    <div class="header_Logo_Cell">
-      <div class="header_Logo_Picture">Logo</div>
-      <div class="header_Logo_Name">Timaflu</div>
-    </div>
-    <div class="header_Page_Cell">
-      <div>Page ???</div>
-    </div>
-    <div class="header_Account_Cell">
-      <div class="header_Account_Name">
-        Name
-      </div>
-      <div class="header_Account_Picture">
-        Photo
-      </div>
-    </div>
-  </header>
   <nav class="nav_Test">
     <div>
-        <a href="Homepage.html">Homepage</a>
+      <img src="Images/Logo.png">
     </div>
+
     <div>
-        <a href="Bestelling_Distributie.html">Bestellingen (Distributie)</a>
+      <a href="Homepage.html">Homepage</a>
+    </div>
+    <div class="dropdown">
+      <a href="#" class="dropdown-toggle">Bestelling</a>
+      <div class="dropdown-menu">
+        <a href="Bestelling_Distributie.html">Distributie</a>
+        <a href="Bestelling_Verkoop.html">Verkoop</a>
+        <a href="Bestelling_Bezorgen.html">Bezorgen</a>
+      </div>
     </div>
     <div>
       <a href="Apotheken.html">Apotheken</a>
@@ -38,28 +36,110 @@
       <a href="Track&Trace.html">Track & Trace</a>
     </div>
     <div>
-      <a href="Bestelling_Verkoop.html">Bestellingen (Verkoop)</a>
+      <a href="Klant_Info.html">Klant Info</a>
     </div>
     <div>
-        <a href="Klant_Info.html">Klant Info</a>
+      <a href="Robots.html">Robots</a>
     </div>
     <div>
-        <a href="Robots.html">Robots</a>
+      <a href="Factuur.html">Facturen</a>
     </div>
     <div>
-        <a href="Factuur.html">Facturen</a>
+      <a href="Bestelling_Producten.html">Producten in Bestelling</a>
     </div>
     <div>
-        <a href="Bestelling_Producten.html">Producten in Bestelling</a> 
+      <a href="Product_Info.html">Product Info</a>
     </div>
-    <div>
-        <a href="Product_Info.html">Product Info</a>
-    </div>
-    <div>
-        <a href="Bestelling_Bezorgen.html">Bestellingen (Bezorgen)</a>
-    </div>
-
   </nav>
+
+  <div class="user">
+    <h1>Welkom 
+      <div class="name-dropdown">
+        <label for="username">Kevin</label>
+        <select id="username" name="username">
+          <option>Kevin</option>
+          <option>Fatima</option>
+          <option>Lars</option>
+        </select>
+      </div>
+    </h1>
+    <h2>Hieronder staan jouw aangewezen bestellingen</h2>
+</div>
+
+<div class="card card-spoed">
+    <div class="card-header">#Bestelnr (Besteld door)</div>
+    <div class="order-number">#2 (Apotheek Rijnzorg)</div>
+    <div class="address">Adres: Vleutenseweg 302, 3532 HR Utrecht</div>
+    <div class="phone">030-2719044</div>
+    <div class="bottom-row">
+      <button class="status-btn">SPOED</button>
+      <select class="status-select">
+      <option>Verzonden</option>
+      <option>Bezig</option>
+      <option>Ontvangen</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="card card-spoed">
+    <div class="card-header">#Bestelnr (Besteld door)</div>
+    <div class="order-number">#4 (Apotheek Maasstad)</div>
+    <div class="address">Adres: Dordtselaan 451, 3075 BJ Rotterdam</div>
+    <div class="phone">010-4672281</div>
+    <div class="bottom-row">
+      <button class="status-btn">SPOED</button>
+      <select class="status-select">
+      <option>Verzonden</option>
+      <option>Bezig</option>
+      <option>Ontvangen</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">#Bestelnr (Besteld door)</div>
+    <div class="order-number">#1 (Apotheek Rijnzorg)</div>
+    <div class="address">Adres: Vleutenseweg 302, 3532 HR Utrecht</div>
+    <div class="phone">030-2719044</div>
+    <div class="bottom-row">
+      <button class="status-btn">NORMAAL</button>
+      <select class="status-select">
+      <option>Verzonden</option>
+      <option>Bezig</option>
+      <option>Ontvangen</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">#Bestelnr (Besteld door)</div>
+    <div class="order-number">#3 (Apotheek Rijnzorg)</div>
+    <div class="address">Adres: Vleutenseweg 302, 3532 HR Utrecht</div>
+    <div class="phone">030-2719044</div>
+    <div class="bottom-row">
+      <button class="status-btn">NORMAAL</button>
+      <select class="status-select">
+      <option>Verzonden</option>
+      <option>Bezig</option>
+      <option>Ontvangen</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">#Bestelnr (Besteld door)</div>
+    <div class="order-number">#5 (Apotheek De Zonnewijzer)</div>
+    <div class="address">Adres: Kerkstraat 118, 1017 GP Amsterdam</div>
+    <div class="phone">020-6147832</div>
+    <div class="bottom-row">
+      <button class="status-btn">NORMAAL</button>
+      <select class="status-select">
+      <option>Ontvangen</option>
+      <option>Bezig</option>
+      <option>Verzonden</option>
+      </select>
+    </div>
+  </div>
 
 </body>
 
