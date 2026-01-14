@@ -74,7 +74,7 @@ a {
   display: block;
 }
 
-/*   Apotheken   */ 
+/*   Alle tabellen   (Bestelling info, Apotheken, Klant info, ?   */ 
 table {
   padding: 25px;
   padding-top: 5px;
@@ -85,10 +85,6 @@ th {
 }
 td {
   border-bottom: 3px solid #1a7a72;
-}
-.PharmacyFilter {
-  display: flex;
-  justify-content: left;
 }
 
 /* Bestelling Distributie */
