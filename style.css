@@ -77,6 +77,7 @@ a {
 /*   Apotheken   */ 
 table {
   padding: 25px;
+  padding-top: 5px;
 }
 th {
   border: 5px solid #249E94;
@@ -90,13 +91,31 @@ td {
   justify-content: left;
 }
 
+/* Bestelling Distributie */
+
+.OrderFilter{
+  display: flex;
+  justify-content: left;
+}
+.Orders th:first-child,
+.Orders td:first-child{
+  width: 155px;
+  max-width: 155px;
+}
+form {
+  margin: 20px 20px 0px 27px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 /*   Track & Trace   */
 .DeliveryNumber {
   display: flex;
   align-items: center;
   justify-content: center;
   width: fit-content;
-  margin: 5px auto;
+  margin: 50px auto 0px auto;
   border: 5px solid #249E94;
   background-color: #0C7779;
   padding: 0px 50px;
@@ -148,13 +167,20 @@ td {
 }
 
 .Delivery_Information_Container {
-  background-color: #249E94;
-  width: 100%;
-  margin: 40px auto;
+  display: flex;
+  justify-content: center;
+  background-color: #0C7779;
+  margin: 0px auto;
+  border: 5px solid;
+  border-color: #249E94;
+  border-radius: 10px;
 }
 
-.Delivery_DateTime {
-  padding: 20px;
+.Delivery_Information  {
+  border-left: 3px solid;
+  border-right: 3px solid;
+  border-color: #249E94;
+  padding: 10px 50px;
 }
 
 

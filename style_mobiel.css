@@ -92,17 +92,16 @@ a {
     background-color: darkred;
 }
 
-.card-header {
-    font-weight: 600;
-    font-size: 14px;
-    color: darkgray;
-    margin-bottom: 5px;
-}
-
 .order-number {
-    font-size: 18px;
+    display: flex;
     font-weight: 600;
+    font-size: 18px;
+    color: darkgray;
     margin-bottom: 10px;
+    justify-content: space-between;
+} & p{
+    margin: 0px;
+    color: white;
 }
 
 .address {
@@ -210,7 +209,7 @@ a {
     }
 
     .order-number {
-        font-size: 50px;
+        font-size: 30px;
     }
 
     .address {

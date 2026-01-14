@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <nav class="nav_Test">
+  <nav class="nav_Test">
     <div>
       <img src="Images/Logo.png">
     </div>
@@ -53,45 +53,65 @@
 
 
   <form>
-    <label for="PharmacyFilter">Filter op Naam:</label>
-    <input type="search" id="PharmacyFilter" name="PharmacyFilter">
+    <label for="OrderFilter">Filter op Naam:</label>
+    <input type="search" id="OrderFilter" name="OrderFilter">
   </form>
-  <table>
+  <table class="Orders">
     <tr>
-      <th>Apotheken</th>
-      <th>Klant?</th>
-      <th>Bestelling geplaatst?</th>
+      <th>Bestellingsnummer</th>
+      <th>Datum ingevoerd</th>
+      <th>Spoed</th>
       <th>Status</th>
+      <th>Besteld door:</th>
+      <th>Gewenste leverdatum</th>
+      <th>Bedrag</th>
+      <th>Betaald</th>
+      <th>Producten</th>
+      <th>Factuur</th>
     </tr>
     <tr>
-      <td>De Zonnewijzer</td>
-      <td>Nee</td>
-      <td>Nee</td>
-      <td>Tweede gesprek gehad</td>
+      <td>1</td>
+      <td>12 december 2025</td>
+      <td>Normaal</td>
+      <td>Verzonden</td>
+      <td>Apotheek De Zonnewijzer</td>
+      <td>14 december 2025 - ochtend</td>
+      <td>€300</td>
+      <td>Ja</td>
+      <td><a href="#">P</a></td>
+      <td><a href="#">F</a></td>
     </tr>
     <tr>
-      <td>Rijnzorg</td>
-      <td>Ja</td>
-      <td>Nee</td>
-      <td>Eerste gesprek gehad</td>
+      <td>2</td>
+      <td>14 december 2025</td>
+      <td>Spoed</td>
+      <td>Verzonden</td>
+      <td>Apotheek Rijnzorg</td>
+      <td>15 december 2025 - middag</td>
     </tr>
     <tr>
-      <td>Maasstad</td>
-      <td>Ja</td>
-      <td>Ja</td>
-      <td>Bestelling Geplaatst</td>
+      <td>3</td>
+      <td>2 januari 2026</td>
+      <td>Normaal</td>
+      <td>Verzonden</td>
+      <td>Apotheek Rijnzorg</td>
+      <td>4 januari 2026 - ochtend</td>
     </tr>
     <tr>
-      <td>Parkzicht</td>
-      <td>Ja</td>
-      <td>Nee</td>
-      <td>Account Gemaakt</td>
+      <td>4</td>
+      <td>2 januari 2026</td>
+      <td>Spoed</td>
+      <td>Verzonden</td>
+      <td>Apotheek Maasstad</td>
+      <td>2 januari 2026 - avond</td>
     </tr>
     <tr>
-      <td>De Lindehof</td>
-      <td>Ja</td>
-      <td>Ja</td>
-      <td>Bestelling Geplaatst</td>
+      <td>5</td>
+      <td>5 januari 2026</td>
+      <td>Normaal</td>
+      <td>Ontvangen</td>
+      <td>Apotheek De Zonnewijzer</td>
+      <td>7 januari 2026 - ochtend</td>
     </tr>
   </table>
 </body>
