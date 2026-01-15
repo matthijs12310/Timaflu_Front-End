@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Timaflu</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Micro+5&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Micro+5&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 
 </head>
+
 <body>
-    <nav class="nav_Test">
+  <nav class="nav_Test">
     <div>
       <img src="Images/Logo.png">
     </div>
 
     <div>
-       <a href="index.html">Homepage</a>
+      <a href="index.html">Homepage</a>
     </div>
     <div class="dropdown">
       <a href="#" class="dropdown-toggle">Bestelling</a>
@@ -46,5 +50,61 @@
       <a href="Product_Info.html">Product Info</a>
     </div>
   </nav>
+  <form>
+    <label for="CustomerFilter">Filter op Naam:</label>
+    <input type="search" id="CustomerFilter" name="CustomerFilter">
+    <label for="Filter">en op</label>
+    <select>
+      <option>Factuurnummer</option>
+      <option>Datum</option>
+      <option>Bedrag</option>
+      <option>Status</option>
+    </select>
+  </form>
+  <table class="Orders"> <!--Heeft class orders om Factuurnummer klein te houden net als bij bestelling informatie-->
+    <tr>
+      <th>Factuurnummer</th>
+      <th>Datum</th>
+      <th>Bedrag</th>
+      <th>Status</th>
+      <th>Klant</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2025-12-31</td>
+      <td>€ 727,50</td>
+      <td>betaald</td>
+      <td>Apotheek Rijnzorg</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2026-01-31</td>
+      <td>€ 1.550,00</td>
+      <td>niet betaald</td>
+      <td>Apotheek Maasstad</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2026-01-31</td>
+      <td>€ 3.270,00</td>
+      <td>niet betaald</td>
+      <td>Apotheek Parkzicht</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2026-01-31</td>
+      <td>€ 340,00</td>
+      <td>niet betaald</td>
+      <td>Apotheek De Lindenhof</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>2026-01-31</td>
+      <td>€ 380,00</td>
+      <td>niet betaald</td>
+      <td>De Zonnewijzer</td>
+    </tr>
+  </table>
 </body>
+
 </html>

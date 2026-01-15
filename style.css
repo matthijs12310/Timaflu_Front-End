@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   color: white;
@@ -74,30 +75,34 @@ a {
   display: block;
 }
 
-/*   Alle tabellen   (Bestelling info, Apotheken, Klant info, ?   */ 
+/*   Alle tabellen   (Bestelling info, Apotheken, Klant info, ?   */
 table {
   padding: 25px;
   padding-top: 5px;
 }
+
 th {
   border: 5px solid #249E94;
   border-radius: 5px;
 }
+
 td {
   border-bottom: 3px solid #1a7a72;
 }
 
-/* Bestelling Distributie */
+/* Bestelling Informatie */
 
-.OrderFilter{
+.OrderFilter {
   display: flex;
   justify-content: left;
 }
+
 .Orders th:first-child,
-.Orders td:first-child{
+.Orders td:first-child {
   width: 155px;
   max-width: 155px;
 }
+
 form {
   margin: 20px 20px 0px 27px;
   display: flex;
@@ -105,7 +110,189 @@ form {
   gap: 10px;
 }
 
+.Header_Table {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Header_Table .aanmaak {
+  margin: 20px 25px 0 0;
+  height: 50%;
+  background-color: #249E94;
+  font-size: 30px;
+  font-weight: normal;
+  border-radius: 10px;
+  width: 5%;
+  height: 60%;
+  transition-duration: 0.5s;
+  color: white;
+  text-align: center;
+}
+
+.aanmaak:hover {
+  cursor: pointer;
+  color: black;
+}
+
+/* Bestelling Aanmaken */
+
+.page {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.page h1 {
+  margin-bottom: 20px;
+}
+
+.card {
+  background: #0C7779;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.page h2 {
+  margin-top: 0;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+.row.adres{
+  justify-content: space-between;
+}
+
+.spoed {
+  justify-content: flex-end;
+}
+
+.product-search {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.ok {
+  color: white;
+}
+
+.low {
+  color: orange;
+}
+
+.summary-line,
+.summary-total {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.summary-total {
+  font-size: 1.2em;
+  font-weight: bold;
+  border-top: 1px solid #fff;
+  padding-top: 10px;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.page button{
+  background-color: #249E94;
+  color: white;
+  font-size: 15px;
+  border: hidden;
+  border-radius: 20px;
+  padding: 8px;
+}
+.page button:hover{
+  cursor: pointer;
+}
+.page button:active{
+  background-color: #005461;
+}
+.row.adres input{
+  width: 100%;
+  margin-top: 5px;
+}
+
+
+/* Robots */
+
+.robot-grid {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.robot-card {
+  background: #0C7779;
+  margin: 15px 15px 15px 15px;
+  border-radius: 8px;
+  width: 20%;
+  height: 50%;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.robot-card h2 {
+  margin: 0;
+}
+
+.gang {
+  color: darkgray;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+
+.status {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.status.bezig {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.status.idle {
+  background: #e2e3e5;
+  color: #383d41;
+}
+
+.task p {
+  margin: 4px 0;
+}
+
+@media (max-width: 1000px) {
+  .robot-grid {
+    font-size: 38px;
+  }
+
+  .robot-card {
+    width: 40%;
+    height: fit-content;
+  }
+}
+
+/* Factuur */
+
+select {
+  height: 22px;
+}
+
 /*   Track & Trace   */
+
 .DeliveryNumber {
   display: flex;
   align-items: center;
@@ -128,7 +315,8 @@ form {
 
 .ProgressLine {
   position: absolute;
-  top: 17px; /* aligns with circle centers */
+  top: 17px;
+  /* aligns with circle centers */
   width: 100%;
   height: 5px;
   background: #ccc;
@@ -152,7 +340,8 @@ form {
 }
 
 .ProgressStep.Completed .Circle {
-  background: #60df64;       /* filled color */
+  background: #60df64;
+  /* filled color */
   border-color: #1ac420;
 }
 
@@ -172,11 +361,9 @@ form {
   border-radius: 10px;
 }
 
-.Delivery_Information  {
+.Delivery_Information {
   border-left: 3px solid;
   border-right: 3px solid;
   border-color: #249E94;
   padding: 10px 50px;
 }
-
-

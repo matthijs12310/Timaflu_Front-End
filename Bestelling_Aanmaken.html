@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Timaflu</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Micro+5&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <nav class="nav_Test">
+    <div>
+      <img src="Images/Logo.png">
+    </div>
+
+    <div>
+       <a href="index.html">Homepage</a>
+    </div>
+    <div class="dropdown">
+      <a href="#" class="dropdown-toggle">Bestelling</a>
+      <div class="dropdown-menu">
+        <a href="Bestelling_Informatie.html">Informatie</a>
+        <a href="Bestelling_Bezorgen.html">Bezorgen</a>
+      </div>
+    </div>
+    <div>
+      <a href="Apotheken.html">Apotheken</a>
+    </div>
+    <div>
+      <a href="Track&Trace.html">Track & Trace</a>
+    </div>
+    <div>
+      <a href="Klant_Info.html">Klant Info</a>
+    </div>
+    <div>
+      <a href="Robots.html">Robots</a>
+    </div>
+    <div>
+      <a href="Factuur.html">Facturen</a>
+    </div>
+    <div>
+      <a href="Bestelling_Producten.html">Producten in Bestelling</a>
+    </div>
+    <div>
+      <a href="Product_Info.html">Product Info</a>
+    </div>
+  </nav>
+
+  <div class="page">
+
+  <h1>Nieuwe order aanmaken</h1>
+
+  <section class="card">
+    <h2>Klant</h2>
+
+    <label>
+      Klant selecteren
+      <select>
+        <option>Apotheek De Zonnewijzer</option>
+        <option>Apotheek Rijnzorg</option>
+        <option>Apotheek Maasstag</option>
+        <option>Apotheek Parizicht</option>
+        <option>Apotheek De Lindehof</option>
+      </select>
+    </label>
+
+    <div class="row adres">
+      <label>
+        Leveradres
+        <input type="text" value="Kerkstraat 118, 1017GP Amsterdam">
+      </label>
+
+      <label>
+        Factuuradres
+        <input type="text" value="Postbuswag 12, 1000AA Amsterdam">
+      </label>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Levering</h2>
+
+    <div class="row">
+      <label>
+        Leverdatum
+        <input type="date">
+      </label>
+
+      <label>
+        Dagdeel
+        <select>
+          <option>Ochtend</option>
+          <option>Middag</option>
+        </select>
+      </label>
+
+      <label class="spoed">
+        <input type="checkbox">
+        Spoedbestelling
+      </label>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Producten</h2>
+
+    <div class="product-search">
+      <input type="text" placeholder="Zoek product">
+      <button>Toevoegen</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Voorraad</th>
+          <th>Aantal</th>
+          <th>Prijs</th>
+          <th>Totaal</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Paracetamol - Acetaminophen 500mg</td>
+          <td class="ok">Op voorraad</td>
+          <td><input type="number" value="10"></td>
+          <td>€ 5,00</td>
+          <td>€ 50,00</td>
+        </tr>
+        <tr>
+          <td>Ibuprofen - Ibuprofen 400mg</td>
+          <td class="ok">Op voorraad</td>
+          <td><input type="number" value="5"></td>
+          <td>€ 2,50</td>
+          <td>€ 12,50</td>
+        </tr>
+        <tr>
+          <td>Amoxicilline - Amoxicilline 500mg</td>
+          <td class="low">Laag</td>
+          <td><input type="number" value="3"></td>
+          <td>€ 15,00</td>
+          <td>€ 45,00</td>
+        </tr>
+        <tr>
+          <td>Metformine - Metformine 500mg</td>
+          <td class="low">Laag</td>
+          <td><input type="number" value="2"></td>
+          <td>€ 3,00</td>
+          <td>€ 6,00</td>
+        </tr>
+        <tr>
+          <td>Omeprazol - Omeprazol 20mg</td>
+          <td class="ok">Op voorraad</td>
+          <td><input type="number" value="8"></td>
+          <td>€ 2,00</td>
+          <td>€ 16,00</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="card summary">
+    <h2>Samenvatting</h2>
+
+    <div class="summary-line">
+      <span>Subtotaal</span>
+      <span>€ 129,50</span>
+    </div>
+
+    <div class="summary-line">
+      <span>Orderkorting (5% bij &gt; €500)</span>
+      <span>€ 0,00</span>
+    </div>
+
+    <div class="summary-line">
+      <span>Klantkorting (10%)</span>
+      <span>- € 12,95</span>
+    </div>
+
+    <div class="summary-total">
+      <span>Totaal</span>
+      <span>€ 116,55</span>
+    </div>
+
+  <div class="actions">
+    <button>Order opslaan</button>
+    <a href="Bestelling_Informatie.html">
+    <button>Annuleren</button>
+    </a>
+  </div>
+  </section>
+
+</div>
+</body>
+</html>
