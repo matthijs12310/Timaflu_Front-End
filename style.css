@@ -75,7 +75,7 @@ a {
   display: block;
 }
 
-/*   Alle tabellen   (Bestelling info, Apotheken, Klant info, ?   */
+/*   Alle tabellen   (Bestelling info, Apotheken, Klant info*/
 table {
   padding: 25px;
   padding-top: 5px;
@@ -293,12 +293,13 @@ select {
 
 /*   Track & Trace   */
 
+/*DeliveryNumber wordt ook door producten in bestelling gebruikt*/
 .DeliveryNumber {
   display: flex;
   align-items: center;
   justify-content: center;
   width: fit-content;
-  margin: 50px auto 0px auto;
+  margin: 50px auto 20px auto;
   border: 5px solid #249E94;
   background-color: #0C7779;
   padding: 0px 50px;
@@ -316,7 +317,6 @@ select {
 .ProgressLine {
   position: absolute;
   top: 17px;
-  /* aligns with circle centers */
   width: 100%;
   height: 5px;
   background: #ccc;
@@ -341,7 +341,6 @@ select {
 
 .ProgressStep.Completed .Circle {
   background: #60df64;
-  /* filled color */
   border-color: #1ac420;
 }
 
@@ -365,5 +364,8 @@ select {
   border-left: 3px solid;
   border-right: 3px solid;
   border-color: #249E94;
-  padding: 10px 50px;
+  padding: 0px 50px;
 }
+
+/* Producten in Bestelling */
+
