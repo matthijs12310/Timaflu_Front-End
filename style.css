@@ -25,6 +25,10 @@ a {
   font-weight: bold;
 }
 
+.nav_Test a{
+  padding: 15px 0 15px 0;
+}
+
 .cell {
   display: flex;
   border: 5px solid #249E94;
@@ -39,7 +43,7 @@ a {
   align-items: center;
   background-color: #0C7779;
   border-bottom: 5px solid #249E94;
-  padding: 0 10px 0 10px;
+  padding: 0 10px 0px 10px;
 }
 
 .dropdown {
@@ -222,6 +226,47 @@ form {
   margin-top: 5px;
 }
 
+/* Homepage/Index */
+
+.home{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.home .titel{
+  margin-bottom: 70px;
+}
+.home p{
+  padding-top: 0px;
+  margin: 0;
+}
+
+.HomepageContainer {
+  margin: 20px auto;
+}
+.robot-grid .home-card{
+  height: 30%;
+}
+.home-card h2{
+  text-align: center;
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+.task{
+  display: flex;
+  flex-direction: column;
+}
+.task a{
+  padding: 5px;
+  text-align: center;
+}
+.task a:hover{
+  text-decoration: underline;
+}
+
 
 /* Robots */
 
@@ -366,5 +411,3 @@ select {
   border-color: #249E94;
   padding: 0px 50px;
 }
-
-
